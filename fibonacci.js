@@ -1,3 +1,4 @@
+//iterative implementation
 function fibs(num){
     if (num == 0){
         return [0];
@@ -12,4 +13,5 @@ function fibs(num){
     }
 }
 
+console.log("Calling the iterative funtion on 8:")
 console.log(fibs(8));
