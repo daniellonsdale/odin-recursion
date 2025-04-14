@@ -17,12 +17,9 @@ console.log("Calling the iterative funtion on 8:")
 console.log(fibs(8));
 
 //Recursive implementation
-function fibsRec(num){
-    if (num == 0){
-        return [0];
-    }else if (num == 1){
-        return [0, 1];
-    }else{
-        
-    }
+function fibsRec(num, arr){
+    
 }
+
+console.log("Calling the recursive funtion on 8:")
+console.log(fibsRec(8, []));
