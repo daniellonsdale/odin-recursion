@@ -15,3 +15,14 @@ function fibs(num){
 
 console.log("Calling the iterative funtion on 8:")
 console.log(fibs(8));
+
+//Recursive implementation
+function fibsRec(num){
+    if (num == 0){
+        return [0];
+    }else if (num == 1){
+        return [0, 1];
+    }else{
+        
+    }
+}
