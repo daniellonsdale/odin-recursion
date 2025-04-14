@@ -18,7 +18,15 @@ console.log(fibs(8));
 
 //Recursive implementation
 function fibsRec(num, arr){
-    
+    if(arr.length <= 2){
+        arr = [0, 1];
+    }if(arr.length >= num){
+        return arr;
+    }else{
+        let next = arr[arr.length - 1] + arr[arr.length - 2];
+        arr.push(next);
+        return fibsRec(num, arr);
+    }
 }
 
 console.log("Calling the recursive funtion on 8:")
