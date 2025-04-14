@@ -11,3 +11,5 @@ function fibs(num){
         return arr;
     }
 }
+
+console.log(fibs(8));
