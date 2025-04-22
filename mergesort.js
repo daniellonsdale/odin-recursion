@@ -1,5 +1,5 @@
 function mergesort(arr){
-    if (arr.length == 1){
+    if (arr.length <= 1){
         return;
     }else{
         let newArrLeft = [];
