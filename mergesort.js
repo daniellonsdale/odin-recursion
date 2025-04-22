@@ -1,6 +1,6 @@
 function mergesort(arr){
     if (arr.length <= 1){
-        return;
+        return arr;
     }else{
         let newArrLeft = [];
         let newArrRight = [];
