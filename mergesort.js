@@ -15,7 +15,13 @@ function mergesort(arr){
         let curLeftPos = 0;
         let curRightPos = 0;
         for (let i = 0; i < newArrLeft.length + newArrRight.length; i++){
-            if(newArrLeft[curLeftPos] <= newArrRight[curRightPos]){
+            if (curLeftPos == newArrLeft.length - 1){
+                newArr.push(newArrRight[curRightPos]);
+                curRightPos++;
+            }else if(curRightPos == newArrRight.length - 1){
+                newArr.push(newArrLeft[curLeftPos]);
+                curLeftPos++;
+            }else if(newArrLeft[curLeftPos] <= newArrRight[curRightPos]){
                 newArr.push(newArrLeft[curLeftPos]);
                 curLeftPos++;
             }else{
