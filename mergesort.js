@@ -6,11 +6,11 @@ function mergesort(arr){
         let newArrRight = [];
         let newArr = [];
         if(arr.length % 2 == 0){
-            newArrLeft = mergesort(arr.slice(0, arr.length/2 - 1));
-            newArrRight = mergesort(arr.slice(arr.length/2, arr.length - 1));
+            newArrLeft = mergesort(arr.slice(0, arr.length/2));
+            newArrRight = mergesort(arr.slice(arr.length/2, arr.length));
         }else{
-            newArrLeft = mergesort(arr.slice(0, Math.floor(arr.length/2)));
-            newArrRight = mergesort(arr.slice(Math.floor(arr.length/2)) + 1, arr.length - 1);
+            newArrLeft = mergesort(arr.slice(0, Math.ceil(arr.length/2)));
+            newArrRight = mergesort(arr.slice(Math.ceil(arr.length/2)), arr.length);
         }
         let curLeftPos = 0;
         let curRightPos = 0;
