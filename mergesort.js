@@ -15,7 +15,7 @@ function mergesort(arr){
         let curLeftPos = 0;
         let curRightPos = 0;
         //Replace this for loop with while loops to fix issue when one array runs out of elements
-        for (let i = 0; i < newArrLeft.length + newArrRight.length; i++){
+        /* for (let i = 0; i < newArrLeft.length + newArrRight.length; i++){
             if (curLeftPos == newArrLeft.length - 1){
                 newArr.push(newArrRight[curRightPos]);
                 curRightPos++;
@@ -23,6 +23,15 @@ function mergesort(arr){
                 newArr.push(newArrLeft[curLeftPos]);
                 curLeftPos++;
             }else if(newArrLeft[curLeftPos] <= newArrRight[curRightPos]){
+                newArr.push(newArrLeft[curLeftPos]);
+                curLeftPos++;
+            }else{
+                newArr.push(newArrRight[curRightPos]);
+                curRightPos++;
+            }
+        } */
+        while(curLeftPos < newArrLeft.length && curRightPos < newArrRight.length){
+            if (newArrLeft[curLeftPos] <= newArrRight[curRightPos]){
                 newArr.push(newArrLeft[curLeftPos]);
                 curLeftPos++;
             }else{
