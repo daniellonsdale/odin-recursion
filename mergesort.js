@@ -39,6 +39,14 @@ function mergesort(arr){
                 curRightPos++;
             }
         }
+        while(curLeftPos < newArrLeft.length){
+            newArr.push(newArrLeft[curLeftPos]);
+            curLeftPos++;
+        }
+        while(curRightPos < newArrRight.length){
+            newArr.push(newArrRight[curRightPos]);
+            curRightPos++;
+        }
         return newArr;
     }
 }
