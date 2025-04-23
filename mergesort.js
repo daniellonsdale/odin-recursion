@@ -14,22 +14,7 @@ function mergesort(arr){
         }
         let curLeftPos = 0;
         let curRightPos = 0;
-        //Replace this for loop with while loops to fix issue when one array runs out of elements
-        /* for (let i = 0; i < newArrLeft.length + newArrRight.length; i++){
-            if (curLeftPos == newArrLeft.length - 1){
-                newArr.push(newArrRight[curRightPos]);
-                curRightPos++;
-            }else if(curRightPos == newArrRight.length - 1){
-                newArr.push(newArrLeft[curLeftPos]);
-                curLeftPos++;
-            }else if(newArrLeft[curLeftPos] <= newArrRight[curRightPos]){
-                newArr.push(newArrLeft[curLeftPos]);
-                curLeftPos++;
-            }else{
-                newArr.push(newArrRight[curRightPos]);
-                curRightPos++;
-            }
-        } */
+
         while(curLeftPos < newArrLeft.length && curRightPos < newArrRight.length){
             if (newArrLeft[curLeftPos] <= newArrRight[curRightPos]){
                 newArr.push(newArrLeft[curLeftPos]);
@@ -52,3 +37,4 @@ function mergesort(arr){
 }
 
 console.log(mergesort([3, 2, 1, 13, 8, 5, 0, 1]));
+console.log(mergesort([105, 79, 100, 110]));
